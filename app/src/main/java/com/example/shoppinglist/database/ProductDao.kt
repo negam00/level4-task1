@@ -4,7 +4,7 @@ import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
-import com.example.shoppinglist.Product
+import com.example.shoppinglist.model.Product
 
 @Dao
 interface ProductDao {

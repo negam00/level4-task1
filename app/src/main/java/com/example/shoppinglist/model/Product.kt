@@ -1,4 +1,4 @@
-package com.example.shoppinglist
+package com.example.shoppinglist.model
 
 import android.os.Parcelable
 import androidx.room.ColumnInfo

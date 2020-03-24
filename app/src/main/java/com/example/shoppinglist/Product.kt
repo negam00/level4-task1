@@ -9,13 +9,14 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 @Entity(tableName = "product_table")
 data class Product(
-    @ColumnInfo(name = "name")
-    var productText: String,
-
-    @ColumnInfo(name = "quantity")
-    var quantity: String,
-
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
-    var id: Long? = null
+    var id: Long? = null,
+
+    @ColumnInfo(name = "name")
+    var name: String,
+
+    @ColumnInfo(name = "quantity")
+    var quantity: Int
+
 ): Parcelable

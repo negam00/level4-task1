@@ -13,20 +13,12 @@ class ProductRepository(context: Context) {
         productDao = database?.productDao()
     }
 
-    suspend fun getAllProducts(): List<Product>? {
-        return productDao?.getAllProducts()
-    }
+    suspend fun getAllProducts(): List<Product>? = productDao?.getAllProducts()
 
-    suspend fun insertProduct(product: Product) {
-        productDao?.insertProduct(product)
-    }
+    suspend fun insertProduct(product: Product) = productDao?.insertProduct(product)
 
-    suspend fun deleteProduct(product: Product) {
-        productDao?.deleteProduct(product)
-    }
+    suspend fun deleteProduct(product: Product) =  productDao?.deleteProduct(product)
 
-    suspend fun deleteAllProducts() {
-        productDao?.deleteAllProducts()
-    }
+    suspend fun deleteAllProducts() = productDao?.deleteAllProducts()
 
 }
